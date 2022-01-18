@@ -3,7 +3,7 @@ class install_app_windows {
     ensure =>directory,
 }
   file {'c:/temp/Git-2.34.1-64-bit.exe':
-    source =>"https://192.168.0.195/iso/Git-2.34.1-64-bit.exe"
+    source =>"http://192.168.0.195/iso/Git-2.34.1-64-bit.exe"
 }
   package { 'Git':
     ensure =>installed,
