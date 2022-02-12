@@ -19,3 +19,4 @@ class install_app_windows {
     install_options =>['/l*v C:\TEMP\SplunkInstall.log']
 
 }
+}
