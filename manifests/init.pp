@@ -16,7 +16,7 @@ class install_app_windows {
   package { 'Splunk':
     ensure =>installed,
     source =>'c:\temp/splunkforwarder-8.2.4-87e2dda940d1-x64-release.msi',
-    install_options =>['/l*v C:\TEMP\SplunkInstall.log']
+    install_options =>['SPLUNK_APP="SplunkForwarder" GENRANDOMPASSWORD=1 FORWARD_SERVER="192.168.0.195:80"  WINEVENTLOG_SYS_ENABLE=1 /quiet']
 
 }
 }
