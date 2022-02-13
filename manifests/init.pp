@@ -16,6 +16,6 @@ class install_app_windows {
   package { 'Splunk':
     ensure =>'8.2.4.0',
     source =>'c:\temp/splunkforwarder-8.2.4-87e2dda940d1-x64-release.msi',
-    instll_options=>['AGREETOLICENSE=Yes LAUNCHSPLUNK=0']
+    install_options=>['AGREETOLICENSE=Yes LAUNCHSPLUNK=0']
 }
 }
