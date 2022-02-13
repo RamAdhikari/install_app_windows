@@ -14,7 +14,8 @@ class install_app_windows {
   source =>"http://192.168.0.195/iso/splunkforwarder-8.2.4-87e2dda940d1-x64-release.msi"
 }
   package { 'Splunk':
-    ensure =>8.2.4.0',
+    ensure =>'8.2.4.0',
     source =>'c:\temp/splunkforwarder-8.2.4-87e2dda940d1-x64-release.msi',
+    instll_options=>['AGREETOLICENSE=Yes LAUNCHSPLUNK=0']
 }
 }
